@@ -51,6 +51,81 @@ svg {
     overflow: hidden;
 }
 
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+    background-color: #fff;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+}
+
+.logo-part {
+    color: #2e2f42;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {
+    color: #404bbf;
+}
+
+.contacts {
+    font-style: normal;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 40px;
+}
+
+.contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
+}
+
 .main-page {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
@@ -71,7 +146,6 @@ svg {
 .main-page .container {
     padding-top: 188px;
     padding-bottom: 188px;
-    border: 1px solid #8e8f99;
 }
 
 .main-page h1 {
@@ -160,17 +234,44 @@ svg {
     gap: 24px;
 }
 
+.team-section h2 {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
 .team-card {
     width: calc((100% - 3 * 24px) / 4);
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
-        0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
+        0 1px 1px rgba(46, 47, 66, 0.16),
+        0 2px 1px rgba(46, 47, 66, 0.08);
     text-align: center;
 }
 
 .team-card .card-content {
     padding: 32px 0;
+}
+
+.team-member-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-member-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 .social-links-list {
@@ -201,6 +302,20 @@ svg {
     display: block;
 }
 
+.portfolio {
+    background-color: #fff;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -218,14 +333,8 @@ svg {
 
 .portfolio-item:hover {
     box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
-        0 1px 6px rgba(46, 47, 66, 0.16), 0 1px 1px rgba(46, 47, 66, 0.12);
-}
-
-.portfolio-card-content {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    background-color: #fff;
+        0 1px 6px rgba(46, 47, 66, 0.16),
+        0 1px 1px rgba(46, 47, 66, 0.12);
 }
 
 .portfolio-item-wrapper {
@@ -253,6 +362,29 @@ svg {
     transform: translateY(0);
 }
 
+.portfolio-card-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    background-color: #fff;
+}
+
+.portfolio-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.portfolio-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 .page-footer {
     background-color: #2e2f42;
     padding: 100px 0;
@@ -271,6 +403,17 @@ svg {
     display: inline-block;
     margin-bottom: 16px;
     padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.footer-logo .logo-part {
+    color: #f4f4fd;
 }
 
 .footer-text {
