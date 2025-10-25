@@ -32,6 +32,23 @@ svg {
     height: auto;
 }
 
+.header-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.header-logo .logo-part {
+    color: #2E2F42;
+}
+
 .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -131,7 +148,7 @@ svg {
 .main-page {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/img-name.jpg);
+        url(../images/bg/people-office.png);
     background-color: #2e2f42;
     background-repeat: no-repeat;
     background-position: center;
