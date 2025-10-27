@@ -162,11 +162,6 @@ svg {
     text-align: center;
 }
 
-.main-page .container {
-    padding-top: 188px;
-    padding-bottom: 188px;
-}
-
 .main-page h1 {
     font-weight: 700;
     font-size: 56px;
@@ -463,8 +458,13 @@ svg {
     margin-bottom: 16px;
 }
 
+.footer-block-social {
+    padding-top: 1px;
+}
+
 .footer-block-social .social-links-list {
     gap: 16px;
+    margin-top: 0;
 }
 
 .footer-block-social .social-links-link:hover,
